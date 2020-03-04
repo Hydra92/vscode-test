@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+#define PI 3.1415926
+class Circle
+{
+private:
+    /* data */
+    int r;//半径
+public:
+    Circle(/* args */);
+    ~Circle();
+    double setR(){
+        cout << "请输入半径" << endl;
+        cin>>r;
+    };
+    double s(){
+        return PI*r*r;
+    };//计算面积
+    double l(){
+        return PI*2*r;
+    };//计算周长
+};
+
+Circle::Circle()
+{
+
+}
+Circle::Circle(int)
+{
+
+}
+Circle::Circle(const Circle& c)
+{
+
+}
+Circle::~Circle()
+{
+}
